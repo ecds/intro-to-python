@@ -34,6 +34,6 @@ for artist in sorted(artist_dict.keys()):
     if artist != '':
         tags = [x for x in artist_dict[artist] if x != '']
         tags = list(set(tags))
-        tags = sorted(tags)
+        tags.sort()
         if len(tags) > 0:
             print(artist + ': ' + ', '.join(tags))
